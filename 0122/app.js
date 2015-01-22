@@ -12,9 +12,23 @@
 		model: Applicant
 	});
 
-	var ListView = Backbone.View.extend({
-		
+	var ApplicantView = Backbone.View.extend({
+		initialize: function() {
+			_.bindAll(this, 'render', 'post', 'cancel', 'edit', 'view');
+		},
 
+		events: { 
+			'click span.post': 'post',
+	    		'click span.cancel': 'cancel',
+	    		'click span.edit': 'edit',
+	    		'click span.view': 'view'
+		},
+
+	    	post: function() {
+
+		};
+
+		
 	});
 
 })(jQuery);
