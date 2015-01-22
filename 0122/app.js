@@ -12,7 +12,10 @@
 		model: Applicant
 	});
 
+	var ListView = Backbone.View.extend({
+		
 
+	});
 
 })(jQuery);
 
